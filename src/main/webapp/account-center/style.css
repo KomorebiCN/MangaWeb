@@ -1,0 +1,100 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: 'iconfont';  /* Project id 4351043 */
+    src: url('//at.alicdn.com/t/c/font_4351043_owk2obwc9en.woff2?t=1701230511751') format('woff2'),
+    url('//at.alicdn.com/t/c/font_4351043_owk2obwc9en.woff?t=1701230511751') format('woff'),
+    url('//at.alicdn.com/t/c/font_4351043_owk2obwc9en.ttf?t=1701230511751') format('truetype');
+}
+
+.iconfont{
+    font-family:"iconfont" !important;
+    font-size:16px;font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+*{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url(../image/background.jfif) no-repeat;
+    background-size: cover;
+    /*background-color: #8da1f8;*/
+}
+
+.nav{
+    z-index: 2;
+    width: 100%;
+    height: 35px;
+    position: fixed;
+    top: 0;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+    /*border-radius: 10px;*/
+    backdrop-filter: blur(10px) ;
+    background: rgba(255,255,255,0.5);
+    padding: 10px;
+}
+.nav ul{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    right: 5%;
+}
+.nav ul .nav-box{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    /* 如果导航栏就六个导航，那么每个导航的宽度都是整个导航
+    的六分之一 */
+    width: calc((100% / 4)*1);
+    height: 10px;
+    border-radius: 2px;
+    transition: .5s;
+}
+.nav ul li{
+    width: 100%;
+    text-align: center;
+}
+
+.nav ul li i {
+    font-size: 25px;
+}
+
+.nav ul li a{
+    color: rgba(0,0,0,0.8);
+    font: 100 25px '优设标题黑';
+    display: block;
+    width: 100%;
+    height: 100%;
+    line-height: 70px;
+    transition: 0.2s;
+}
+
+.nav ul li a:hover {
+    color: rgba(70, 100, 180,0.8);
+}
+
+.container {
+    z-index: 1;
+    display: flex;
+    position: relative;
+    top:0;
+    margin-top: 55px;
+    width: 1160px;
+    height: 700px;
+    background: rgba(255,255,255,0.8);
+    backdrop-filter: blur(20px);
+}
+
