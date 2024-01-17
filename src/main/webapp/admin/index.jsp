@@ -267,7 +267,7 @@
             <tr>
                 <th>ID</th>
                 <th>用户名</th>
-                <th>密码</th>
+<%--                <th>密码</th>--%>
                 <th>性别</th>
                 <th>电子邮箱</th>
                 <th>注册日期</th>
@@ -286,9 +286,9 @@
                 <td>
                     <%=list.get(i).getUser()%>
                 </td>
-                <td>
-                    <%=list.get(i).getPassword()%>
-                </td>
+<%--                <td>--%>
+<%--                    <%=list.get(i).getPassword()%>--%>
+<%--                </td>--%>
                 <td>
                     <%=list.get(i).getSex()%>
                 </td>

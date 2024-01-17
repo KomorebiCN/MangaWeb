@@ -19,7 +19,9 @@ $(document).ready(function(){
 
         document.body.appendChild(loginForm);//把增加的这个form表单添加到body中
         // console.log(loginForm);
+
         loginForm.submit(); //提交表单
+
         return loginForm;
     }
 
